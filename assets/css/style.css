@@ -5140,6 +5140,10 @@ textarea.form-control.is-invalid {
   border-color: transparent;
 }
 
+.nav-link:hover{
+  color: #dc562e !important;
+}
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #3f78e0;
@@ -45237,3 +45241,8 @@ div#bio4 p {
   /* height: 100%; */
   overflow: hidden;
 }
+
+.dropdown-menu .dropdown-item:hover {
+      color: #fff;
+      background-color:#dc562e;
+    }
