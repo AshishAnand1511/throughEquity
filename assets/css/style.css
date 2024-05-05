@@ -45185,6 +45185,20 @@ footer.bg-dark.angled.upper-start:before {
   white-space: nowrap;
 }
 
+#about-us-para {
+  transition: all 400ms;
+  display: grid;
+  grid-template-rows: 0fr;
+}
+
+#about-us-para.bio-active {
+  grid-template-rows: 1fr;
+}
+
+#about-us-para p {
+  /* height: 100%; */
+  overflow: hidden;
+}
 div#bio1 {
   transition: all 400ms;
   display: grid;

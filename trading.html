@@ -20,7 +20,11 @@
 
   <!-- ............. -->
 </head>
-
+<style>
+  .buttonn:hover {
+    background-color: #6ccff6 !important;
+  }
+</style>
 <body>
   <div class="content-wrapper">
     <header class="wrapper">
@@ -101,8 +105,8 @@
           <div class="">
             <div style="width: 100% !important; left: 50%;"
               class="mx-auto d-flex justify-content-center align-items-center">
-              <h1 style="font-size: 30px; border: 1px solid black; width: fit-content;"
-                class="display-1 mb-0 px-5 py-1 rounded bg-pale-leaf mb-10">
+              <h1 style="font-size: 30px; border: 1px solid black; width: fit-content; background-color: #6ccff692 ; color: white;"
+                class="display-1 mb-0 px-5 py-1 rounded mb-10">
                 Trading
               </h1>
             </div>
@@ -111,15 +115,15 @@
               <p>Dive into the dynamic world of trading with our comprehensive courses designed to equip you with
                 essential skills and knowledge. From technical analysis to option trading, our courses empower you
                 to make informed decisions and thrive in the financial markets.</p>
-              <div style="width: 100%;" class="gap-5  justify-content-center align-items-center d-flex">
-                <button class="w-50 btn btn-outline-secondary" id="technical-btn"
-                  style="font-weight: 700; padding: 0.5rem 2rem;border: none; border-bottom: 1px solid red;">
-                  Technical Analysis
-                </button>
-                <button class="w-50 mb-3 btn btn-outline-secondary" id="option-btn"
-                  style="font-weight: 700; padding: 0.5rem 2rem;border: none; border-bottom: 1px solid black;">
-                  Option Trading
-                </button>
+                <div style="width: 100%;" class="gap-5 justify-content-center align-items-center d-flex">
+                  <button class="w-50 btn btn-outline-secondary" id="technical-btn" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d;"
+                      onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+                      Technical Analysis
+                  </button>
+                  <button class="w-50 mb-3 btn btn-outline-secondary" id="option-btn" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid gray;"
+                      onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+                      Option Trading
+                  </button>
               </div>
               <div id="technical" style="display: block;">
                 <h5><b>- Description: </b></h5>
@@ -142,10 +146,9 @@
                 <li>Improved decision-making skills in timing trades</li>
                 <li>Development of personalised trading strategies based on technical analysis principles</li>
 
-                <button class="mx-auto d-flex justify-content-center align-items-center mt-5"
-                  style="font-weight: 700; padding: 0.5rem 2rem; border-radius: 1rem;">
-                  Enroll Technical Analysis Course
-                </button>
+                <div class="w-100 d-flex align-items-center justify-content-center">
+                  <button type="button" class="btn btn-sm buttonn mt-5" style="background-color: #dc562e; color: #fff;"> Enroll Technical Analysis Course</button>
+                </div>
               </div>
               <div id="option" style="display: none;">
                 <h5><b>- Description: </b></h5>
@@ -166,10 +169,9 @@
                 <li>Understanding of various option strategies and when to apply them</li>
                 <li>Proficiency in managing risk and maximising returns in options trading</li>
                 <li>Practical application of options trading strategies in real-world scenarios</li>
-                <button class="mx-auto d-flex justify-content-center align-items-center mt-5"
-                  style="font-weight: 700; padding: 0.5rem 2rem; border-radius: 1rem;">
-                  Enroll Option Trading Course
-                </button>
+                <div class="w-100 d-flex align-items-center justify-content-center">
+                  <button type="button" class="mt-5 btn btn-sm buttonn" style="background-color: #dc562e; color: #fff;">Enroll Option Trading Course</button>
+                </div>
               </div>
             </div>
           </div>
@@ -185,41 +187,18 @@
 
 
     </section>
+    <br>
+    <br>
+    <br>
 
     <footer class="bg-light">
-      <div class="container-card">
-        <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-light-500 mb-14"
-          data-image-src="./assets/img/photos/bg22.png">
-          <div class="card-body py-14 px-0">
-            <div class="container">
-              <div class="row text-center">
-                <div class="col-xl-11 col-xxl-9 mx-auto">
-                  <h2 class="fs-16 text-uppercase text-gradient gradient-1 mb-3">Join Our Community</h2>
-                  <h3 class="display-4 mb-7 px-lg-17">We are trusted by over 5000+ clients. Join them now and grow your
-                    business.</h3>
-                </div>
-                <!-- /column -->
-              </div>
-              <!-- /.row -->
-              <div class="d-flex justify-content-center">
-                <span><a href="https://whatsapp.com/channel/0029VaQ07rBBVJkzRcvbzc06"
-                    style="min-width: 14rem; font-size: 1.3rem;"
-                    class="btn btn-lg btn-gradient gradient-1 rounded">Join</a></span>
-              </div>
-            </div>
-            <!--/.container -->
-          </div>
-          <!--/.card-body -->
-        </div>
-        <!--/.card -->
-      </div>
       <!-- /.container-card -->
       <div class="container pb-13 pb-md-15"">
           <div class=" row gy-6 gy-lg-0">
         <div class="col-md-4 col-lg-3">
           <div class="widget">
             <h4>Connect With Us</h4>
-            <a href="mailto:#" class="link-body">throughequity.com@gmail.com</a><br /> +91 7489352405
+            <a href="mailto:#" class="link-body">contact@throughequity.com</a><br /> +91 7489352405
             <nav class="nav social ">
               <a href="https://wa.me/message/LS2SKH4GRL4HG1"><i class="uil uil-whatsapp"></i></a>
               <a href="#"><i class="uil uil-facebook-f"></i></a>
@@ -326,20 +305,20 @@
       if (a == 0) {
         document.querySelector("#technical").style.display = "block";
         document.querySelector("#option").style.display = "none";
-        document.querySelector("#technical-btn").style.borderBottom = "1px solid red";
-        document.querySelector("#option-btn").style.borderBottom = "1px solid black";
+        document.querySelector("#technical-btn").style.borderBottom = "1px solid #001d3d";
+        document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
       }
       else if (a == 1) {
         document.querySelector("#technical").style.display = "none";
         document.querySelector("#option").style.display = "block";
-        document.querySelector("#option-btn").style.borderBottom = "1px solid red";
-        document.querySelector("#technical-btn").style.borderBottom = "1px solid black";
+        document.querySelector("#option-btn").style.borderBottom = "1px solid #001d3d";
+        document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
       }
       else {
         document.querySelector("#technical").style.display = "none";
         document.querySelector("#option").style.display = "none";
-        document.querySelector("#option-btn").style.borderBottom = "1px solid black";
-        document.querySelector("#technical-btn").style.borderBottom = "1px solid black";
+        document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
+        document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
       }
     }
   </script>
