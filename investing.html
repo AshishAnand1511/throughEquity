@@ -113,15 +113,15 @@
                 fundamental analysis and advanced investment strategies to help you achieve your financial goals.
               </p>
               <div style="width: 100%;" class="gap-5  justify-content-center align-items-center d-flex">
-                <button class="w-50 btn btn-outline-secondary" id="fundamental-1-btn"
-                  style="font-weight: 700; padding: 0.5rem 2rem;border: none; border-bottom: 1px solid #001d3d;">
-                  Fundamental Analysis 1
-                </button>
-                <button class="w-50 mb-3 btn btn-outline-secondary" id="fundamental-2-btn"
-                  style="font-weight: 700; padding: 0.5rem 2rem;border: none; border-bottom: 1px solid gray;">
-                  Fundamental
+                <button class="w-50 btn btn-outline-secondary" id="fundamental-1-btn" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d;background-color: #dc562e; color: #fff;"
+                      onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
+                      Fundamental Analysis 1
+                  </button>
+                <button class="w-50 btn btn-outline-secondary" id="fundamental-2-btn" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d;background-color: #dc562e; color: #fff;"
+                      onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
+                      Fundamental
                   Analysis 2
-                </button>
+                  </button>
               </div>
 
               <div id="fundamental-1" style=" display: block;">
@@ -142,9 +142,11 @@
                 <li>Understanding of key financial metrics and idea of valuation</li>
                 <li>Proficiency in making informed investment decisions based on fundamental analysis</li>
                 <li>Development of a structured approach to investment analysis and decision-making</li>
-                <button class="mx-auto d-flex justify-content-center align-items-center mt-5"
-                  style="font-weight: 700; padding: 0.5rem 2rem; border-radius: 1rem;">Enroll
-                  Fundamental Analysis Level One Course</button>
+                <br><br>
+                <button class="w-50 btn btn-outline-secondary" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d;background-color: #dc562e; color: #fff;"
+                onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
+                Fundamental Analysis 1
+            </button>
               </div>
               <div id="fundamental-2" style=" display: none;">
                 <h5><b>- Description: </b></h5>
@@ -162,10 +164,11 @@
                   <li>- Proficiency in constructing and managing investment portfolios</li>
                   <li>- Ability to assess and mitigate risks in investment strategies</li>
                   <li>- Application of fundamental analysis principles to optimise investment performance</li>
-                  <button class="mx-auto d-flex justify-content-center align-items-center mt-5"
-                    style="font-weight: 700; padding: 0.5rem 2rem; border-radius: 1rem;">
-                    Enroll Fundamental Analysis Level Two Course
-                  </button>
+                  <br><br>
+                  <button class="w-50 btn btn-outline-secondary" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d;background-color: #dc562e; color: #fff;"
+                  onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
+                  Enroll Fundamental Analysis Level Two Course
+              </button>
               </div>
             </div>
           </div>
@@ -181,34 +184,11 @@
 
 
     </section>
+    <br>
+    <br>
+    <br>
 
     <footer class="bg-light">
-      <div class="container-card">
-        <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-light-500 mb-14"
-          data-image-src="./assets/img/photos/bg22.png">
-          <div class="card-body py-14 px-0">
-            <div class="container">
-              <div class="row text-center">
-                <div class="col-xl-11 col-xxl-9 mx-auto">
-                  <h2 class="fs-16 text-uppercase text-gradient gradient-1 mb-3">Join Our Community</h2>
-                  <h3 class="display-4 mb-7 px-lg-17">We are trusted by over 5000+ clients. Join them now and grow your
-                    business.</h3>
-                </div>
-                <!-- /column -->
-              </div>
-              <!-- /.row -->
-              <div class="d-flex justify-content-center">
-                <span><a href="https://whatsapp.com/channel/0029VaQ07rBBVJkzRcvbzc06"
-                    style="min-width: 14rem; font-size: 1.3rem;"
-                    class="btn btn-lg btn-gradient gradient-1 rounded">Join</a></span>
-              </div>
-            </div>
-            <!--/.container -->
-          </div>
-          <!--/.card-body -->
-        </div>
-        <!--/.card -->
-      </div>
       <!-- /.container-card -->
       <div class="container pb-13 pb-md-15"">
           <div class=" row gy-6 gy-lg-0">
@@ -322,14 +302,14 @@
       if (b == 0) {
         document.querySelector("#fundamental-1").style.display = "block";
         document.querySelector("#fundamental-2").style.display = "none";
-        document.querySelector("#fundamental-1-btn").style.borderBottom = "1px solid #";
+        document.querySelector("#fundamental-1-btn").style.borderBottom = "1px solid #001d3d";
         document.querySelector("#fundamental-2-btn").style.borderBottom = "1px solid gray";
       }
       else {
         document.querySelector("#fundamental-1").style.display = "none";
         document.querySelector("#fundamental-2").style.display = "block";
-        document.querySelector("#fundamental-2-btn").style.borderBottom = "1px solid red";
-        document.querySelector("#fundamental-1-btn").style.borderBottom = "1px solid black";
+        document.querySelector("#fundamental-2-btn").style.borderBottom = "1px solid #001d3d";
+        document.querySelector("#fundamental-1-btn").style.borderBottom = "1px solid gray";
       }
     }
   </script>
