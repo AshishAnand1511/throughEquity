@@ -20,6 +20,26 @@
 
 <body>
   <style>
+    .cmain {
+      background: linear-gradient(to right,
+          #001d3d 0%,
+          #001d3d 30%,
+          #E6E8EC 30%,
+          #E6E8EC 100%);
+      height: 100%;
+      width: 100%;
+    }
+
+    .cmain2 {
+      background: linear-gradient(to left,
+          #001d3d 0%,
+          #001d3d 30%,
+          #E6E8EC 30%,
+          #E6E8EC 100%);
+      height: 100%;
+      width: 100%;
+    }
+
     /* Hide carddd2 by default */
     .carddd2 {
       display: none;
@@ -93,9 +113,11 @@
                   href="./for-you.html">For you</a>
 
               </li>
-              <li class="nav-item dropdown block d-lg-none"><a style="font-weight: 700; color: #fff;" class="nav-link "
+              <li class="nav-item dropdown"><a style="font-weight: 700; color: #fff;" class="nav-link "
+                  href="./corporatetraining.html">Corporate Training</a>
+              </li>
+              <li class="nav-item dropdown"><a style="font-weight: 700; color: #fff;" class="nav-link "
                   href="./contact.html">Contact Us</a>
-
               </li>
               <div class="container my-auto mb-5">
                 <div class="row justify-content-center">
@@ -236,19 +258,27 @@
         <!-- /////////////////////// -->
         <div class="carddd1" style="display: flex; flex-direction: column; gap: 2rem;">
           <h1>People</h1>
-          <div
+          <div class="cmain"
             style="background-color: rgba(128, 128, 128, 0.112); padding: 1rem; border-radius:1rem; display: flex; justify-content: space-between; align-items: center; text-align: center; flex-wrap: wrap;">
             <div style="display: flex; flex-direction: column; align-items: center;">
               <img style="height: 15rem;" src="./assets/img/hrideshm.png" alt="">
-              <h2>Hridyesh Mishra</h2>
-              <p>Lead Trainer</p>
+              <h2 style="color: #fff;">Hridyesh Mishra</h2>
+              <p style="color: #fff;">Lead Trainer</p>
             </div>
-            <p style="width:40rem;">Our Lead Trainer, whose journey is marked by a decade-plus immersion in stock market research. With over five years of experience as a SEBI registered investment advisor, Hridyesh has honed his expertise in guiding investors towards informed decisions. Leveraging three-plus years of experience as a trainer, he adeptly shares his wealth of knowledge, simplifying complex financial concepts for learners. As both a trader and investor, Hridyesh's hands-on experience further enriches his understanding of the financial landscape. With a noble mission to democratise finance education, he endeavours to make it accessible and understandable to the masses, empowering individuals to navigate the intricacies of the market with confidence.</p>
+            <p style="width:40rem; text-align: left !important; ">Our Lead Trainer, whose journey is marked by a
+              decade-plus immersion in stock market research. With over five years of experience as a SEBI registered
+              investment advisor, Hridyesh has honed his expertise in guiding investors towards informed decisions.
+              Leveraging three-plus years of experience as a trainer, he adeptly shares his wealth of knowledge,
+              simplifying complex financial concepts for learners. As both a trader and investor, Hridyesh's hands-on
+              experience further enriches his understanding of the financial landscape. With a noble mission to
+              democratise finance education, he endeavours to make it accessible and understandable to the masses,
+              empowering individuals to navigate the intricacies of the market with confidence.</p>
           </div>
-          <div
+          <div class="cmain2"
             style="background-color: rgba(128, 128, 128, 0.112); padding: 1rem; border-radius:1rem; display: flex; justify-content: space-between; align-items: center; text-align: center; flex-wrap: wrap-reverse;">
 
-            <p style="width:40rem;">A distinguished leader and COO of Data Science Wizards, brings a wealth of expertise
+            <p style="width:40rem; text-align: right !important;">A distinguished leader and COO of Data Science
+              Wizards, brings a wealth of expertise
               with over 29 years of experience spanning Finance, IT, and insurance sectors. Holding a Ph.D., MBA, and
               esteemed certifications such as PRINCE2, FMLI, FIII, and ADI, Dr. Khare embodies unparalleled proficiency
               in IT transformation and insurance domain. His visionary leadership has been instrumental in driving
@@ -259,8 +289,8 @@
               landscapes.</p>
             <div style="display: flex; flex-direction: column; align-items: center;">
               <img style="height: 15rem; border-radius: 50%;" src="assets/img/avatars/t1.jpg" alt="">
-              <h2>Dr. Ramesh Khare</h2>
-              <p>Mentor</p>
+              <h2 style="color: #fff;">Dr. Ramesh Khare</h2>
+              <p style="color: #fff;">Mentor</p>
             </div>
           </div>
         </div>
