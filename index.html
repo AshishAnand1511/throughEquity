@@ -24,24 +24,24 @@
 
 <body>
   <style>
+    .cardd:hover {
+      transform: translateY(-8px);
+    }
 
-.cardd:hover {
-  transform: translateY(-8px);
-}
+    .cardd {
+      transition: transform 0.3s ease;
+    }
 
-.cardd {
-  transition: transform 0.3s ease;
-}
+    .buttonn {
+      transition: transform 0.3s ease !important;
+      display: inline-block;
+      /* Ensure the button behaves as an inline block element */
+    }
 
-.buttonn {
-    transition: transform 0.3s ease !important;
-    display: inline-block; /* Ensure the button behaves as an inline block element */
-}
-
-.buttonn:hover {
-    transform: translateY(-5px);
-    background-color: #6ccff6 !important;
-}
+    .buttonn:hover {
+      transform: translateY(-5px);
+      background-color: #6ccff6 !important;
+    }
 
     @media (max-width: 576px) {
       .btn {
@@ -49,15 +49,17 @@
         margin-bottom: .5rem;
       }
     }
+
     .btn-hover {
-        transition: transform 0.3s !important;
+      transition: transform 0.3s !important;
     }
+
     .btn-hover:hover {
-        transform: translateY(-5px) !important;
-        transition: transform 0.3s !important;
+      transform: translateY(-5px) !important;
+      transition: transform 0.3s !important;
 
     }
-</style>
+  </style>
   </style>
 
   <div class="content-wrapper">
@@ -101,15 +103,15 @@
                 <div class="row justify-content-center">
                   <div class="col-auto">
                     <div class="btn-group dropend">
-                      <button type="button" class="btn btn-secondary  border-0" data-bs-toggle="dropdown"
+                      <button type="button" class="btn btn-secondary border-0" data-bs-toggle="dropdown"
                         aria-expanded="false"
                         style="background-color: #001d3d; color: #fff; font-weight: bold; height: 2rem; padding: 0.5rem 1rem;">
                         <i style="font-weight: 700; color: #fff;" class="ri-menu-line"></i>
                       </button>
-                      <ul class="dropdown-menu fs-12  overflow-hidden"
-                        style="background-color: #001d3d; padding: 0; border: 1px solid #fff;font-size: .9rem !important;">
-                        <li><a class="dropdown-item py-2" href="./financial-calculator.html" style="white-space: nowrap;color: #fff;">Financial
-                            Calculator</a></li>
+                      <ul class="dropdown-menu fs-12 overflow-hidden"
+                        style="background-color: #001d3d; padding: 0; border: 1px solid #fff; font-size: .9rem !important;">
+                        <li><a class="dropdown-item py-2" href="./financial-calculator.html"
+                            style="white-space: nowrap; color: #fff;">Financial Calculator</a></li>
                         <li><a class="dropdown-item py-2" href="#" style="color: #fff;">Blog</a></li>
                         <li><a class="dropdown-item py-2" href="./for-you.html" style="color: #fff;">For you</a></li>
                       </ul>
@@ -117,6 +119,7 @@
                   </div>
                 </div>
               </div>
+
 
 
 
@@ -152,21 +155,22 @@
 
     <section class="wrapper bg-light">
       <div class="container-card">
-        <div class="card image-wrapper bg-full bg-image  mt-2 mb-5"
-          data-image-src="./assets/img/homepage_bg.png">
+        <div class="card image-wrapper bg-full bg-image  mt-2 mb-5" data-image-src="./assets/img/homepage_bg.png">
           <div class="card-body py-14 px-0 ">
             <div class="container">
               <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center text-center text-lg-start">
                 <div class="col-lg-6" data-cues="slideInDown" data-group="page-title" data-delay="900">
                   <h1 class="display-2 mb-4 me-xl-5 me-xxl-0 text-white">Navigate the path to financial freedom <span
                       style="color: #dc562e; text-shadow: #fff 1px 0 2px;"><br> "Through Equity"</span></h1>
-                  <p class="lead fs-17 lh-sm mb-7 pe-xxl-15 text-white">Guiding you with expertise, we demystify the complexities
+                  <p class="lead fs-17 lh-sm mb-7 pe-xxl-15 text-white">Guiding you with expertise, we demystify the
+                    complexities
                     of equity investment education, empowering you to navigate confidently towards financial freedom.
                   </p>
-                  <a href="beforeStockMarket.html" class="btn btn-lg btn-gradient buttonn rounded btn-hover" style="background-color: #dc562e;">
+                  <a href="beforeStockMarket.html" class="btn btn-lg btn-gradient buttonn rounded btn-hover"
+                    style="background-color: #dc562e;">
                     Before Stock Market
-                </a>
-                
+                  </a>
+
                 </div>
                 <!--/column -->
                 <div class="col-lg-6">
@@ -280,7 +284,8 @@
               </div>
               <div>
                 <h3 style="color: #fff; font-weight: 900;" class="fs-22 mb-1">Community Connect: </h3>
-                <p class="mb-0">Network with peers, mentors, and industry experts to share experiences and stay informed.</p>
+                <p class="mb-0">Network with peers, mentors, and industry experts to share experiences and stay
+                  informed.</p>
               </div>
             </div>
           </div>
@@ -295,7 +300,8 @@
           </div>
           <!--/column -->
           <div class="col-lg-5 offset-lg-1">
-            <h2 class="fs-20 text-uppercase mb-3 font-weight-bold" style="color: #dc562e; font-weight: 900;">ABOUT US</h2>
+            <h2 class="fs-20 text-uppercase mb-3 font-weight-bold" style="color: #dc562e; font-weight: 900;">ABOUT US
+            </h2>
             <h3 class="display-4 mb-4">Through Equity stands at the forefront of financial education
             </h3>
             <p class="mb-6">Through Equity stands at the forefront of financial education, offering comprehensive stock
@@ -307,9 +313,10 @@
 
             </p>
             <div class="w-100 d-flex align-items-center justify-content-center">
-              <a href="/about.html"><button type="button" class="btn btn-sm buttonn" style="background-color: #dc562e; color: #fff;">More
-                About
-                Us</button>
+              <a href="/about.html"><button type="button" class="btn btn-sm buttonn"
+                  style="background-color: #dc562e; color: #fff;">More
+                  About
+                  Us</button>
               </a>
             </div>
             <!--/.row -->
@@ -498,39 +505,39 @@
   <!-- /section -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="bg-light text-center py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
-                <p class="mb-2">contact@throughequity.com</p>
-                <p class="mb-2">+91 7489352405</p>
-                <nav class="nav social text-center align-items-center justify-content-center">
-                    <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
-                    <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
-                            class="uil uil-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
-                </nav>
-            </div>
+  <footer class="bg-light text-center py-5 shadow-lg
+    <div class=" container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
+        <p class="mb-2">contact@throughequity.com</p>
+        <p class="mb-2">+91 7489352405</p>
+        <nav class="nav social text-center align-items-center justify-content-center">
+          <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
+          <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
+          <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
+              class="uil uil-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
+        </nav>
+      </div>
 
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
-                <p class="mb-0">2nd floor, women's world near bajrang sweets, indrapuri sector-c</p>
-            </div>
+      <div class="col-md-4">
+        <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
+        <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
+      </div>
 
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
-                <ul class="list-unstyled text-reset mb-0">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                    <li><a href="refundPolicy.html">Refund Policy</a></li>
-                </ul>
-            </div>
-        </div>
+      <div class="col-md-4">
+        <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
+        <ul class="list-unstyled text-reset mb-0">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="refundPolicy.html">Refund Policy</a></li>
+        </ul>
+      </div>
     </div>
-</footer>
+    </div>
+  </footer>
 
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

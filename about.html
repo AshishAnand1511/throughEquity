@@ -22,30 +22,32 @@
   <style>
     /* Hide carddd2 by default */
     .carddd2 {
-        display: none;
-        background-color: red !important;
+      display: none;
+      background-color: red !important;
     }
 
     /* Show carddd1 for laptop mode */
     @media (min-width: 992px) {
-        .carddd1 {
-            display: flex;
-        }
-        .carddd2 {
-            display: none;
-        }
+      .carddd1 {
+        display: flex;
+      }
+
+      .carddd2 {
+        display: none;
+      }
     }
 
     /* Show carddd2 for mobile mode */
     @media (max-width: 991px) {
-        .carddd2 {
-            display: block;
-        }
-        .carddd1 {
-            display: none;
-        }
+      .carddd2 {
+        display: block;
+      }
+
+      .carddd1 {
+        display: none;
+      }
     }
-</style>
+  </style>
   <div class="content-wrapper">
     <header class="wrapper">
       <nav style="background-color: #001d3d; color: #fff;"
@@ -205,7 +207,7 @@
         <div class="carddd1" style="display: flex; flex-direction: column; gap: 2rem;">
           <h1>People</h1>
           <div
-            style="background-color: rgba(128, 128, 128, 0.112); padding: 1rem; border-radius:1rem; display: flex; justify-content: space-between; align-items: center; text-align: center;">
+            style="background-color: rgba(128, 128, 128, 0.112); padding: 1rem; border-radius:1rem; display: flex; justify-content: space-between; align-items: center; text-align: center; flex-wrap: wrap;">
             <div style="display: flex; flex-direction: column; align-items: center;">
               <img style="height: 15rem;" src="./assets/img/hrideshm.png" alt="">
               <h2>Hridyesh Mishra</h2>
@@ -223,7 +225,7 @@
               masses, empowering individuals to navigate the intricacies of the market with confidence.</p>
           </div>
           <div
-            style="background-color: rgba(128, 128, 128, 0.112); padding: 1rem; border-radius:1rem; display: flex; justify-content: space-between; align-items: center; text-align: center;">
+            style="background-color: rgba(128, 128, 128, 0.112); padding: 1rem; border-radius:1rem; display: flex; justify-content: space-between; align-items: center; text-align: center; flex-wrap: wrap-reverse;">
 
             <p style="width:40rem;">A distinguished leader and COO of Data Science Wizards, brings a wealth of expertise
               with over 29 years of experience spanning Finance, IT, and insurance sectors. Holding a Ph.D., MBA, and
@@ -255,7 +257,17 @@
                     <div class="card-body">
                       <h5 class="card-title">Hridyesh Mishra</h5>
                       <p class="card-text">Director</p>
-                      <p class="card-text">The visionary founder of our company, whose journey is marked by a decade-plus immersion in stock market research. With over five years of experience as a SEBI registered investment advisor, Hridyesh has honed his expertise in guiding investors towards informed decisions. Leveraging three-plus years of experience as a trainer, he adeptly shares his wealth of knowledge, simplifying complex financial concepts for learners. His diverse background spans multiple domains within the stock market, including roles as a research specialist, authorised person, and advisor, granting him unique insights into mass psychology and market dynamics. As both a trader and investor, Hridyesh's hands-on experience further enriches his understanding of the financial landscape. With a noble mission to democratise finance education, he endeavours to make it accessible and understandable to the masses, empowering individuals to navigate the intricacies of the market with confidence.</p>
+                      <p class="card-text">The visionary founder of our company, whose journey is marked by a
+                        decade-plus immersion in stock market research. With over five years of experience as a SEBI
+                        registered investment advisor, Hridyesh has honed his expertise in guiding investors towards
+                        informed decisions. Leveraging three-plus years of experience as a trainer, he adeptly shares
+                        his wealth of knowledge, simplifying complex financial concepts for learners. His diverse
+                        background spans multiple domains within the stock market, including roles as a research
+                        specialist, authorised person, and advisor, granting him unique insights into mass psychology
+                        and market dynamics. As both a trader and investor, Hridyesh's hands-on experience further
+                        enriches his understanding of the financial landscape. With a noble mission to democratise
+                        finance education, he endeavours to make it accessible and understandable to the masses,
+                        empowering individuals to navigate the intricacies of the market with confidence.</p>
                     </div>
                   </div>
                 </div>
@@ -269,7 +281,15 @@
                     <div class="card-body">
                       <h5 class="card-title">Dr. Ramesh Khare</h5>
                       <p class="card-text">Mentor</p>
-                      <p class="card-text">A distinguished leader and COO of Data Science Wizards, brings a wealth of expertise with over 29 years of experience spanning Finance, IT, and insurance sectors. Holding a Ph.D., MBA, and esteemed certifications such as PRINCE2, FMLI, FIII, and ADI, Dr. Khare embodies unparalleled proficiency in IT transformation and insurance domain. His visionary leadership has been instrumental in driving successful implementations of different enterprise digital solutions. Committed to excellence, he champions digital initiatives, IT governance, and procurement strategies, fostering a culture of innovation and organisational advancement. Dr. Khare serves as a mentor, illuminating the path forward with strategic acumen and unwavering dedication, thus shaping the trajectory of finance and technology landscapes.</p>
+                      <p class="card-text">A distinguished leader and COO of Data Science Wizards, brings a wealth of
+                        expertise with over 29 years of experience spanning Finance, IT, and insurance sectors. Holding
+                        a Ph.D., MBA, and esteemed certifications such as PRINCE2, FMLI, FIII, and ADI, Dr. Khare
+                        embodies unparalleled proficiency in IT transformation and insurance domain. His visionary
+                        leadership has been instrumental in driving successful implementations of different enterprise
+                        digital solutions. Committed to excellence, he champions digital initiatives, IT governance, and
+                        procurement strategies, fostering a culture of innovation and organisational advancement. Dr.
+                        Khare serves as a mentor, illuminating the path forward with strategic acumen and unwavering
+                        dedication, thus shaping the trajectory of finance and technology landscapes.</p>
                     </div>
                   </div>
                 </div>
@@ -277,9 +297,9 @@
             </div>
           </div>
         </div>
-        
-        
-        
+
+
+
 
         <div style="margin-top: 5rem; display: flex; flex-direction: column; gap: 2rem;">
           <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
@@ -289,7 +309,7 @@
               <h2>Om Mehra</h2>
               <p style="text-align: justify;">Guest Faculty</p>
               <p id="btn1" style="cursor: pointer;">Bio <i id="icn1" class="ri-arrow-down-s-line"></i></p>
-              <div id="bio1" style="width: 20rem; text-align: center;">
+              <div id="bio1" style="width: 17rem; text-align: center;">
                 <p style="text-align: justify;">
                   A distinguished technical and derivative
                   analyst currently serving in the research division of Samco Securities. With over 6 years of profound
@@ -308,7 +328,7 @@
               <h2>CA Piyush Maheshwari</h2>
               <p>Guest Faculty</p>
               <p id="btn2" style="cursor: pointer;">Bio <i id="icn2" class="ri-arrow-down-s-line"></i></p>
-              <div id="bio2" style="width: 20rem; text-align: center;">
+              <div id="bio2" style="width: 17rem; text-align: center;">
                 <p style="text-align: justify;">
                   A distinguished Fellow Chartered Accountant and Registered Valuer (SFA) holding
                   a B.Com degree. With a breadth of expertise encompassing GST, taxation, audit, finance, and
@@ -325,7 +345,7 @@
               <h2>Om Prakash Ahirwar</h2>
               <p>Operations Manager</p>
               <p id="btn3" style="cursor: pointer;">Bio <i id="icn3" class="ri-arrow-down-s-line"></i></p>
-              <div id="bio3" style="width: 20rem; text-align: center;">
+              <div id="bio3" style="width: 17rem; text-align: center;">
                 <p style="text-align: justify;">
                   A young and accomplished Operations Manager with an MBA in Finance and Marketing and a keen interest
                   in the stock market, is also an NISM certified research analyst. He efficiently oversees training
@@ -341,7 +361,7 @@
           </div>
         </div>
         <!-- /////////////////////// -->
-       
+
 
         <div class="row gy-10 gx-lg-8 gx-xl-12 align-items-center">
 
@@ -352,7 +372,7 @@
         <!--/column -->
       </div>
       <!--/.row -->
-      
+
 
 
 
@@ -388,39 +408,39 @@
   </div>
   <!-- /.content-wrapper -->
   <br><br>
-  <footer class="bg-light text-center py-5">
+  <footer class="bg-light text-center py-5 shadow-lg">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
-                <p class="mb-2">contact@throughequity.com</p>
-                <p class="mb-2">+91 7489352405</p>
-                <nav class="nav social text-center align-items-center justify-content-center">
-                    <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
-                    <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
-                            class="uil uil-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
-                </nav>
-            </div>
-
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
-                <p class="mb-0">2nd floor, women's world near bajrang sweets, indrapuri sector-c</p>
-            </div>
-
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
-                <ul class="list-unstyled text-reset mb-0">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                    <li><a href="refundPolicy.html">Refund Policy</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
+          <p class="mb-2">contact@throughequity.com</p>
+          <p class="mb-2">+91 7489352405</p>
+          <nav class="nav social text-center align-items-center justify-content-center">
+            <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
+            <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
+            <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
+                class="uil uil-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
+          </nav>
         </div>
+
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
+          <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
+          <ul class="list-unstyled text-reset mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="refundPolicy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />

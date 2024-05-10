@@ -20,6 +20,19 @@
 </head>
 
 <body>
+  <style>
+    .descbtn {
+      display: flex;
+      flex-wrap: nowrap;
+      gap:5px;
+    }
+  
+    @media (max-width: 600px) {
+      .descbtn {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
   <div class="content-wrapper">
     <header class="wrapper">
       <nav style="background-color: #001d3d; color: #fff;"
@@ -113,173 +126,182 @@
         <div class="grid grid-view projects-masonry">
           <div class="isotope-filter filter mb-10 ">
             <!-- <p>Filter:</p> -->
-            <ul class="d-flex list-unstyled m-0 p-0 justify-content-center" style="width: 100%;">
-                <!-- <li><a class="filter-item active" data-filter="*">All</a></li> -->
-              
-                    <a id="description-btn" style="padding: 7px 30px; border-radius: 4px; color: #fff; border-bottom: 1px solid #000; background-color: #dc562e;" onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';"
-                        class="filter-item btn btn-outline-secondary w-100" data-filter=".concept">Description</a>
-               
-                
-                    <a id="content-btn" style="padding: 7px 30px; border-radius: 4px; color: #fff; border-bottom: 1px solid #000; background-color: #dc562e;" onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';"
-                        class="filter-item btn btn-outline-secondary w-100" data-filter=".product">Content</a>
-                
-                
-                    <a id="connect-btn" style="padding: 7px 30px; border-radius: 4px; color: #fff; border-bottom: 1px solid #000; background-color: #dc562e;" onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';"
-                        class="filter-item btn btn-outline-secondary w-100" data-filter=".workshop">How To Connect</a>
-                
-                <!-- <li><a class="filter-item" data-filter=".still-life">Still Life</a></li> -->
+            <ul class="d-flex descbtn list-unstyled m-0 p-0 justify-content-center" style="width: 100%;">
+              <!-- <li><a class="filter-item active" data-filter="*">All</a></li> -->
+
+              <a id="description-btn"
+                style="padding: 7px 30px; border-radius: 4px; color: #fff; border-bottom: 1px solid #000; background-color: #dc562e;"
+                onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';"
+                onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';"
+                class="filter-item btn btn-outline-secondary w-100" data-filter=".concept">Description</a>
+
+
+              <a id="content-btn"
+                style="padding: 7px 30px; border-radius: 4px; color: #fff; border-bottom: 1px solid #000; background-color: #dc562e;"
+                onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';"
+                onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';"
+                class="filter-item btn btn-outline-secondary w-100" data-filter=".product">Content</a>
+
+
+              <a id="connect-btn"
+                style="padding: 7px 30px; border-radius: 4px; color: #fff; border-bottom: 1px solid #000; background-color: #dc562e;"
+                onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';"
+                onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';"
+                class="filter-item btn btn-outline-secondary w-100" data-filter=".workshop">How To Connect</a>
+
+              <!-- <li><a class="filter-item" data-filter=".still-life">Still Life</a></li> -->
             </ul>
-        </div>
-        
-        
-          
-            <div class="">
-
-              <div class="project-details d-flex flex-column">
-                <div id="description">
-                  <p style="text-align: justify;">
-                    Welcome to our Corporate Training division, where we specialise in providing tailored training
-                    programs designed to enhance financial skills and knowledge for organisations and educational
-                    institutions alike. Our comprehensive training solutions are crafted with flexibility and
-                    customization in mind, ensuring that we meet the specific needs and interests of colleges,
-                    universities, and businesses of all sizes.
-                    At our Corporate Training division, we offer a wide range of content designed to empower individuals
-                    with the tools and insights they need to succeed in the dynamic world of finance. Our training
-                    programs cover a diverse array of topics, ranging from foundational concepts to advanced strategies,
-                    ensuring that participants gain a holistic understanding of financial principles.
-                    Whether you're looking to provide your students with practical financial knowledge to prepare them
-                    for the future or equip your employees with the skills they need to excel in their roles, our expert
-                    instructors are here to help. Our training sessions are engaging, interactive, and practical,
-                    allowing participants to apply their learning directly to real-world scenarios.
-                  </p>
-                  <p style="text-align: justify;">From basic financial literacy to complex investment strategies, our
-                    Corporate Training division
-                    covers it all. We believe that education is the key to success, and our goal is to empower
-                    individuals with the knowledge and skills they need to thrive in today's competitive environment.
-                  </p>
-                  <p style="text-align: justify;">
-                    Whether you're a college looking to enhance your curriculum with practical financial education or a
-                    business seeking to invest in the professional development of your employees, our Corporate Training
-                    division has the solution for you. Get in touch with us today to learn more about how we can help
-                    you achieve your training goals.
-                  </p>
-                  <div style="text-align: justify;">
-                    <h1 style="font-weight:700; font-size: 1rem;">
-                      Customization:
-                    </h1>
-                    <p>
-                      Our corporate training programs are fully customizable to suit the unique requirements of colleges
-                      and corporate offices. We understand that every organisation has different goals, schedules, and
-                      areas of focus. Therefore, we offer flexible training durations (e.g., 7 days, 30 days, 45 days)
-                      and
-                      can adapt the content to align with your team's interests and proficiency levels.</p>
-                  </div>
-
-                  <!-- /.post-header -->
-                </div>
-
-                <!-- ------------------------------------------------ -->
+          </div>
 
 
 
-                <!-- /.project-details -->
-              </div>
-              <div id="content">
+          <div class="">
 
+            <div class="project-details d-flex flex-column">
+              <div id="description">
+                <p style="text-align: justify;">
+                  Welcome to our Corporate Training division, where we specialise in providing tailored training
+                  programs designed to enhance financial skills and knowledge for organisations and educational
+                  institutions alike. Our comprehensive training solutions are crafted with flexibility and
+                  customization in mind, ensuring that we meet the specific needs and interests of colleges,
+                  universities, and businesses of all sizes.
+                  At our Corporate Training division, we offer a wide range of content designed to empower individuals
+                  with the tools and insights they need to succeed in the dynamic world of finance. Our training
+                  programs cover a diverse array of topics, ranging from foundational concepts to advanced strategies,
+                  ensuring that participants gain a holistic understanding of financial principles.
+                  Whether you're looking to provide your students with practical financial knowledge to prepare them
+                  for the future or equip your employees with the skills they need to excel in their roles, our expert
+                  instructors are here to help. Our training sessions are engaging, interactive, and practical,
+                  allowing participants to apply their learning directly to real-world scenarios.
+                </p>
+                <p style="text-align: justify;">From basic financial literacy to complex investment strategies, our
+                  Corporate Training division
+                  covers it all. We believe that education is the key to success, and our goal is to empower
+                  individuals with the knowledge and skills they need to thrive in today's competitive environment.
+                </p>
+                <p style="text-align: justify;">
+                  Whether you're a college looking to enhance your curriculum with practical financial education or a
+                  business seeking to invest in the professional development of your employees, our Corporate Training
+                  division has the solution for you. Get in touch with us today to learn more about how we can help
+                  you achieve your training goals.
+                </p>
                 <div style="text-align: justify;">
                   <h1 style="font-weight:700; font-size: 1rem;">
-                    Training Topics:
+                    Customization:
                   </h1>
-                  <p>Our corporate training covers a wide range of topics, including:</p>
+                  <p>
+                    Our corporate training programs are fully customizable to suit the unique requirements of colleges
+                    and corporate offices. We understand that every organisation has different goals, schedules, and
+                    areas of focus. Therefore, we offer flexible training durations (e.g., 7 days, 30 days, 45 days)
+                    and
+                    can adapt the content to align with your team's interests and proficiency levels.</p>
+                </div>
+
+                <!-- /.post-header -->
+              </div>
+
+              <!-- ------------------------------------------------ -->
+
+
+
+              <!-- /.project-details -->
+            </div>
+            <div id="content">
+
+              <div style="text-align: justify;">
+                <h1 style="font-weight:700; font-size: 1rem;">
+                  Training Topics:
+                </h1>
+                <p>Our corporate training covers a wide range of topics, including:</p>
+                <ul>
+                  <li>Financial literacy Stock market fundamentals</li>
+                  <li>Personal finance management</li>
+                  <li>Investment strategies and portfolio management</li>
+                  <li>Risk management techniques</li>
+                  <li>Investment and trading Methodologies</li>
+                  <li>Technical Analysis Of Stock Market</li>
+                  <li>Future & Option trading strategies</li>
+                  <li>Retirement planning and wealth Creation Learning</li>
+                  <li>Evaluating company performance and financial health</li>
+                </ul>
+              </div>
+              <div>
+                <div style="text-align: justify;">
+                  <h1 style="font-weight:700; font-size: 1rem;">
+                    Delivery Formats:
+                  </h1>
+                  <p>We offer various delivery formats for our corporate training programs, including:</p>
                   <ul>
-                    <li>Financial literacy Stock market fundamentals</li>
-                    <li>Personal finance management</li>
-                    <li>Investment strategies and portfolio management</li>
-                    <li>Risk management techniques</li>
-                    <li>Investment and trading Methodologies</li>
-                    <li>Technical Analysis Of Stock Market</li>
-                    <li>Future & Option trading strategies</li>
-                    <li>Retirement planning and wealth Creation Learning</li>
-                    <li>Evaluating company performance and financial health</li>
+                    <li>In-person workshops conducted at your location</li>
+                    <li>Virtual seminars or webinars for remote teams</li>
+                    <li>Blended learning approaches combining online resources with live sessions</li>
+                    <li>Customised training materials and resources accessible anytime, anywhere</li>
                   </ul>
                 </div>
-                <div>
-                  <div style="text-align: justify;">
-                    <h1 style="font-weight:700; font-size: 1rem;">
-                      Delivery Formats:
-                    </h1>
-                    <p>We offer various delivery formats for our corporate training programs, including:</p>
-                    <ul>
-                      <li>In-person workshops conducted at your location</li>
-                      <li>Virtual seminars or webinars for remote teams</li>
-                      <li>Blended learning approaches combining online resources with live sessions</li>
-                      <li>Customised training materials and resources accessible anytime, anywhere</li>
-                    </ul>
-                  </div>
-                  <div style="text-align: justify;">
-                    <h1 style="font-weight:700; font-size: 1rem;">
-                      Benefits of Corporate Training:
-                    </h1>
-                    <p>Investing in corporate training can offer several benefits for your organisation, including:</p>
-                    <ul>
+                <div style="text-align: justify;">
+                  <h1 style="font-weight:700; font-size: 1rem;">
+                    Benefits of Corporate Training:
+                  </h1>
+                  <p>Investing in corporate training can offer several benefits for your organisation, including:</p>
+                  <ul>
 
-                      <li>Enhanced financial literacy and skills among employees or students</li>
-                      <li>Improved decision-making and problem-solving abilities</li>
-                      <li>Increased productivity and efficiency in financial tasks</li>
-                      <li>Better risk management and financial planning capabilities</li>
-                      <li>Strengthened teamwork and collaboration within the organisation</li>
-                    </ul>
-                  </div>
+                    <li>Enhanced financial literacy and skills among employees or students</li>
+                    <li>Improved decision-making and problem-solving abilities</li>
+                    <li>Increased productivity and efficiency in financial tasks</li>
+                    <li>Better risk management and financial planning capabilities</li>
+                    <li>Strengthened teamwork and collaboration within the organisation</li>
+                  </ul>
                 </div>
-
-
-                <!-- /.post-header -->
               </div>
-              <div id="connect">
-                <div id="content">
-                  <div style="text-align: justify;">
 
-                    <p>"Interested in arranging a customized training program for your college or corporate office?
-                      Contact us today to discuss your specific requirements and receive a personalized proposal. Our
-                      team will work closely with you to design a training program that meets your needs, delivers
-                      tangible results for your organization, and elevates your team's financial skills. Reach out to us
-                      via phone, email, or online inquiry form to get started—we look forward to partnering with you to
-                      achieve your training objectives."</p>
 
-                  </div>
+              <!-- /.post-header -->
+            </div>
+            <div id="connect">
+              <div id="content">
+                <div style="text-align: justify;">
+
+                  <p>"Interested in arranging a customized training program for your college or corporate office?
+                    Contact us today to discuss your specific requirements and receive a personalized proposal. Our
+                    team will work closely with you to design a training program that meets your needs, delivers
+                    tangible results for your organization, and elevates your team's financial skills. Reach out to us
+                    via phone, email, or online inquiry form to get started—we look forward to partnering with you to
+                    achieve your training objectives."</p>
+
                 </div>
-
-                <!-- /.post-header -->
               </div>
-              <div class="project item col-md-6 product">
 
-                <div class="project-details d-flex justify-content-center flex-column">
-                  <div class="post-header">
-                    <!-- <div class="post-category text-line mb-3 text-purple">
+              <!-- /.post-header -->
+            </div>
+            <div class="project item col-md-6 product">
+
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <!-- <div class="post-category text-line mb-3 text-purple">
                     Cosmetic
                     
                   </div> -->
-                  </div>
-                  <!-- /.post-header -->
                 </div>
-                <!-- /.project-details -->
+                <!-- /.post-header -->
               </div>
-              <!-- /.project -->
-
-
-
-
-              <!-- /.project -->
-              <div class="project item col-md-6 concept">
-
-                <!-- /.project-details -->
-              </div>
-
-
-
-              <!-- /.project -->
+              <!-- /.project-details -->
             </div>
-            <!-- /.row -->
+            <!-- /.project -->
+
+
+
+
+            <!-- /.project -->
+            <div class="project item col-md-6 concept">
+
+              <!-- /.project-details -->
+            </div>
+
+
+
+            <!-- /.project -->
+          </div>
+          <!-- /.row -->
           <!-- /.grid -->
         </div>
         <!-- /.container -->
@@ -462,39 +484,39 @@
 
   <br><br><br>
   <!-- /.content-wrapper -->
-  <footer class="bg-light text-center py-5">
+  <footer class="bg-light text-center py-5 shadow-lg">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
-                <p class="mb-2">contact@throughequity.com</p>
-                <p class="mb-2">+91 7489352405</p>
-                <nav class="nav social text-center align-items-center justify-content-center">
-                    <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
-                    <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
-                            class="uil uil-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
-                </nav>
-            </div>
-
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
-                <p class="mb-0">2nd floor, women's world near bajrang sweets, indrapuri sector-c</p>
-            </div>
-
-            <div class="col-md-4">
-                <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
-                <ul class="list-unstyled text-reset mb-0">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                    <li><a href="refundPolicy.html">Refund Policy</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
+          <p class="mb-2">contact@throughequity.com</p>
+          <p class="mb-2">+91 7489352405</p>
+          <nav class="nav social text-center align-items-center justify-content-center">
+            <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
+            <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
+            <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
+                class="uil uil-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
+          </nav>
         </div>
+
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
+          <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
+          <ul class="list-unstyled text-reset mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="refundPolicy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />

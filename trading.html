@@ -24,7 +24,23 @@
   .buttonn:hover {
     background-color: #6ccff6 !important;
   }
+  .btnn{
+    flex-wrap: nowrap;
+  }
+  .btn{
+    width: 50%;
+  }
+  @media (max-width:600px) {
+    .btnn{
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .btn{
+    width: 100%;
+  }
+  }
 </style>
+
 <body>
   <div class="content-wrapper">
     <header class="wrapper">
@@ -105,7 +121,8 @@
           <div class="">
             <div style="width: 100% !important; left: 50%;"
               class="mx-auto d-flex justify-content-center align-items-center">
-              <h1 style="font-size: 30px; border: 1px solid black; width: fit-content; background-color: #dc562e ; color: white;"
+              <h1
+                style="font-size: 30px; border: 1px solid black; width: fit-content; background-color: #dc562e ; color: white;"
                 class="display-1 mb-0 px-5 py-1 rounded mb-10">
                 Trading
               </h1>
@@ -115,15 +132,19 @@
               <p>Dive into the dynamic world of trading with our comprehensive courses designed to equip you with
                 essential skills and knowledge. From technical analysis to option trading, our courses empower you
                 to make informed decisions and thrive in the financial markets.</p>
-                <div style="width: 100%;" class="gap-5 justify-content-center align-items-center d-flex">
-                  <button class="w-50 btn btn-outline-secondary" id="technical-btn" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d; background-color: #dc562e; color: #fff;"
-                      onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
-                      Technical Analysis
-                  </button>
-                  <button class="w-50 btn btn-outline-secondary" id="option-btn" style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid gray;background-color: #dc562e; color: #fff;"
-                      onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
-                      Option Trading
-                  </button>
+              <div style="width: 100%;" class="gap-5 justify-content-center align-items-center d-flex btnn">
+                <button class="btn btn-outline-secondary" id="technical-btn"
+                  style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d; background-color: #dc562e; color: #fff;"
+                  onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';"
+                  onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
+                  Technical Analysis
+                </button>
+                <button class="btn btn-outline-secondary" id="option-btn"
+                  style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid gray;background-color: #dc562e; color: #fff;"
+                  onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';"
+                  onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
+                  Option Trading
+                </button>
               </div>
               <div id="technical" style="display: block;">
                 <h5 class="fs-25"><b>Description: </b></h5>
@@ -147,7 +168,8 @@
                 <li>Development of personalised trading strategies based on technical analysis principles</li>
 
                 <div class="w-100 d-flex align-items-center justify-content-center">
-                  <button type="button" class="btn btn-sm buttonn mt-5" style="background-color: #dc562e; color: #fff;"> Enroll Technical Analysis Course</button>
+                  <button type="button" class="btn btn-sm buttonn mt-5" style="background-color: #dc562e; color: #fff;">
+                    Enroll Technical Analysis Course</button>
                 </div>
               </div>
               <div id="option" style="display: none;">
@@ -170,7 +192,8 @@
                 <li>Proficiency in managing risk and maximising returns in options trading</li>
                 <li>Practical application of options trading strategies in real-world scenarios</li>
                 <div class="w-100 d-flex align-items-center justify-content-center">
-                  <button type="button" class="mt-5 btn btn-sm buttonn" style="background-color: #dc562e; color: #fff;">Enroll Option Trading Course</button>
+                  <button type="button" class="mt-5 btn btn-sm buttonn"
+                    style="background-color: #dc562e; color: #fff;">Enroll Option Trading Course</button>
                 </div>
               </div>
             </div>
@@ -191,87 +214,88 @@
     <br>
     <br>
 
-    <footer class="bg-light text-center py-5">
+    <footer class="bg-light text-center py-5 shadow-lg">
       <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
-                  <p class="mb-2">contact@throughequity.com</p>
-                  <p class="mb-2">+91 7489352405</p>
-                  <nav class="nav social text-center align-items-center justify-content-center">
-                      <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
-                      <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
-                      <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
-                              class="uil uil-instagram"></i></a>
-                      <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
-                  </nav>
-              </div>
-  
-              <div class="col-md-4">
-                  <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
-                  <p class="mb-0">2nd floor, women's world near bajrang sweets, indrapuri sector-c</p>
-              </div>
-  
-              <div class="col-md-4">
-                  <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
-                  <ul class="list-unstyled text-reset mb-0">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="#">Terms and Conditions</a></li>
-                      <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                      <li><a href="refundPolicy.html">Refund Policy</a></li>
-                  </ul>
-              </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
+            <p class="mb-2">contact@throughequity.com</p>
+            <p class="mb-2">+91 7489352405</p>
+            <nav class="nav social text-center align-items-center justify-content-center">
+              <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
+              <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
+              <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
+                  class="uil uil-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i
+                  class="uil uil-linkedin"></i></a>
+            </nav>
           </div>
+
+          <div class="col-md-4">
+            <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
+            <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
+            <ul class="list-unstyled text-reset mb-0">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="refundPolicy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-  </footer>
-  <div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-    </svg>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/theme.js"></script>
+    </footer>
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/theme.js"></script>
 
-  <script src="./assets/classroom.js"></script>
+    <script src="./assets/classroom.js"></script>
 
-  <script>
-    var a = 2;
-    document.querySelector("#technical-btn").addEventListener("click", () => {
-      a = 0;
-      updateDisplay();
-    });
-    document.querySelector("#option-btn").addEventListener("click", () => {
-      a = 1;
-      updateDisplay();
-    });
+    <script>
+      var a = 2;
+      document.querySelector("#technical-btn").addEventListener("click", () => {
+        a = 0;
+        updateDisplay();
+      });
+      document.querySelector("#option-btn").addEventListener("click", () => {
+        a = 1;
+        updateDisplay();
+      });
 
-    function updateDisplay() {
-      if (a == 0) {
-        document.querySelector("#technical").style.display = "block";
-        document.querySelector("#option").style.display = "none";
-        document.querySelector("#technical-btn").style.borderBottom = "1px solid #001d3d";
-        document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
+      function updateDisplay() {
+        if (a == 0) {
+          document.querySelector("#technical").style.display = "block";
+          document.querySelector("#option").style.display = "none";
+          document.querySelector("#technical-btn").style.borderBottom = "1px solid #001d3d";
+          document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
+        }
+        else if (a == 1) {
+          document.querySelector("#technical").style.display = "none";
+          document.querySelector("#option").style.display = "block";
+          document.querySelector("#option-btn").style.borderBottom = "1px solid #001d3d";
+          document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
+        }
+        else {
+          document.querySelector("#technical").style.display = "none";
+          document.querySelector("#option").style.display = "none";
+          document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
+          document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
+        }
       }
-      else if (a == 1) {
-        document.querySelector("#technical").style.display = "none";
-        document.querySelector("#option").style.display = "block";
-        document.querySelector("#option-btn").style.borderBottom = "1px solid #001d3d";
-        document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
-      }
-      else {
-        document.querySelector("#technical").style.display = "none";
-        document.querySelector("#option").style.display = "none";
-        document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
-        document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
-      }
-    }
-  </script>
+    </script>
 </body>
 
 </html>

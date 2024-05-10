@@ -28,6 +28,26 @@
     scale: 1.05;
     opacity: .8;
   }
+  .btnn{
+    width: 100%;
+    font-size: 30px;
+  }
+  .cardd{
+    width: 100%;
+    height: 200px;
+  }
+  @media (max-width:600px) {
+    .btnn{
+      font-size: 20px !important;
+    }
+    .cardd{
+      height: 150px;
+    }
+    .card-inner{
+      width: 100%;
+      flex: 1 0 100%;
+    }
+  }
 </style>
 
 <body>
@@ -151,62 +171,66 @@
                 </div>
               </div>
               <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-5 mb-4 text-center">
-                        <a href="trading.html" class="text-decoration-none">
-                            <div class="card bg-pale-red text-center p-4" style="height: 200px;">
-                                <div class="d-flex justify-content-center align-items-center mb-3">
-                                    <img src="./assets/img/icons/lineal/shield.svg"
-                                         class="svg-inject icon-svg icon-svg-lg text-red" alt="" style="max-height: 100px; max-width: 100%;" />
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center text-center">
-                                    <h4 class="mb-0 text-uppercase fs-30">Trading</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-5 mb-4 text-center">
-                        <a href="investing.html" class="text-decoration-none">
-                            <div class="card bg-pale-leaf text-center p-4" style="height: 200px;">
-                                <div class="d-flex justify-content-center align-items-center mb-3">
-                                    <img src="./assets/img/icons/lineal/cloud-computing-3.svg"
-                                         class="svg-inject icon-svg icon-svg-lg text-leaf" alt="" style="max-height: 100px; max-width: 100%;" />
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center text-center">
-                                    <h4 class="mb-0 text-uppercase fs-30">Investing</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-5 mb-4 text-center">
-                        <a href="personal.html" class="text-decoration-none">
-                            <div class="card bg-pale-primary text-center p-4" style="height: 200px;">
-                                <div class="d-flex justify-content-center align-items-center mb-3">
-                                    <img src="./assets/img/icons/lineal/analytics.svg"
-                                         class="svg-inject icon-svg icon-svg-lg text-primary" alt="" style="max-height: 100px; max-width: 100%;" />
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center text-center">
-                                    <h4 class="mb-0 text-uppercase fs-30">Personal Finance</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-5 mb-4 text-center">
-                        <a href="research.html" class="text-decoration-none">
-                            <div class="card text-center p-4 " style="height: 200px; background-color: #dc572e54;">
-                                <div class="d-flex justify-content-center align-items-center mb-3">
-                                    <img src="./assets/img/icons/lineal/cloud-computing-2.svg"
-                                         class="svg-inject icon-svg icon-svg-lg text-leaf" alt="" style="max-height: 100px; max-width: 100%;" />
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center text-center">
-                                    <h4 class="mb-0 text-uppercase fs-30">Research Analyst</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="row justify-content-center w-100 ">
+                  <div class="col-5 mb-4 text-center card-inner">
+                    <a href="trading.html" class="text-decoration-none">
+                      <div class="card bg-pale-red text-center p-4 cardd" style="height: 200px;">
+                        <div class="d-flex justify-content-center align-items-center mb-3">
+                          <img src="./assets/img/icons/lineal/shield.svg"
+                            class="svg-inject icon-svg icon-svg-lg text-red" alt=""
+                            style="max-height: 100px; max-width: 100%;" />
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-center">
+                          <h4 class="mb-0 text-uppercase btnn">Trading</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-5 mb-4 text-center card-inner">
+                    <a href="investing.html" class="text-decoration-none">
+                      <div class="card bg-pale-leaf text-center p-4 cardd" style="height: 200px;">
+                        <div class="d-flex justify-content-center align-items-center mb-3">
+                          <img src="./assets/img/icons/lineal/cloud-computing-3.svg"
+                            class="svg-inject icon-svg icon-svg-lg text-leaf" alt=""
+                            style="max-height: 100px; max-width: 100%;" />
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-center">
+                          <h4 class="mb-0 text-uppercase btnn">Investing</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-5 mb-4 text-center card-inner">
+                    <a href="personal.html" class="text-decoration-none">
+                      <div class="card bg-pale-primary text-center p-4 cardd" style="height: 200px;">
+                        <div class="d-flex justify-content-center align-items-center mb-3">
+                          <img src="./assets/img/icons/lineal/analytics.svg"
+                            class="svg-inject icon-svg icon-svg-lg text-primary" alt=""
+                            style="max-height: 100px; max-width: 100%;" />
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-center">
+                          <h4 class="mb-0 text-uppercase btnn">Personal Finance</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-5 mb-4 text-center card-inner">
+                    <a href="research.html" class="text-decoration-none">
+                      <div class="card text-center p-4 cardd" style="height: 200px; background-color: #dc572e54;">
+                        <div class="d-flex justify-content-center align-items-center mb-3">
+                          <img src="./assets/img/icons/lineal/cloud-computing-2.svg"
+                            class="svg-inject icon-svg icon-svg-lg text-leaf" alt=""
+                            style="max-height: 100px; max-width: 100%;" />
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-center">
+                          <h4 class="mb-0 text-uppercase btnn">Research Analyst</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-            </div>
-            
+              </div>
+
             </div>
           </div>
 
@@ -281,87 +305,140 @@
 
           <div class="freqely">
             <div class="accordion">
-                <h1>Frequently Asked Questions</h1>
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion1">
-                    <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is Technical Analysis?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Technical analysis is a method of evaluating securities by analysing statistics generated by market activity, such as past prices and trading volume. It helps traders forecast future price movements based on historical data.</div>
+              <h1>Frequently Asked Questions</h1>
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion1">
+                <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is Technical
+                  Analysis?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Technical analysis is
+                  a method of evaluating securities by analysing statistics generated by market activity, such as past
+                  prices and trading volume. It helps traders forecast future price movements based on historical data.
                 </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion2">
-                    <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Who Should Take the Trading Course?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">This course is suitable for anyone interested in learning how to analyse price charts and indicators to make informed trading decisions. Whether you're a beginner or an experienced trader looking to enhance your skills, this course provides valuable insights into technical analysis techniques.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion2">
+                <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Who Should Take the
+                  Trading Course?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">This course is
+                  suitable for anyone interested in learning how to analyse price charts and indicators to make informed
+                  trading decisions. Whether you're a beginner or an experienced trader looking to enhance your skills,
+                  this course provides valuable insights into technical analysis techniques.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion3">
+                <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What is Option
+                  Trading?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Option trading
+                  involves buying and selling options contracts, which give traders the right, but not the obligation,
+                  to buy or sell an underlying asset at a predetermined price within a specified timeframe. It's a
+                  versatile financial instrument that allows traders to profit from market movements with limited risk.
                 </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion3">
-                    <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What is Option Trading?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Option trading involves buying and selling options contracts, which give traders the right, but not the obligation, to buy or sell an underlying asset at a predetermined price within a specified timeframe. It's a versatile financial instrument that allows traders to profit from market movements with limited risk.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion5">
+                <label for="accordion5" class="accordion-item-title"><span class="icon"></span>Who Should Take the
+                  Option Trading Course?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">The Option Trading
+                  Course is ideal for individuals interested in exploring advanced trading strategies and leveraging
+                  options contracts to enhance their trading portfolio. Whether you're a seasoned trader or a newcomer
+                  to options, this course provides valuable insights into option trading techniques.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion6">
+                <label for="accordion6" class="accordion-item-title"><span class="icon"></span>What is
+                  Investing?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Investing involves
+                  committing money to financial assets with the expectation of generating returns over time. It is a way
+                  to grow wealth by allocating funds to assets such as stocks, bonds, real estate, and mutual funds.
                 </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion5">
-                    <label for="accordion5" class="accordion-item-title"><span class="icon"></span>Who Should Take the Option Trading Course?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">The Option Trading Course is ideal for individuals interested in exploring advanced trading strategies and leveraging options contracts to enhance their trading portfolio. Whether you're a seasoned trader or a newcomer to options, this course provides valuable insights into option trading techniques.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion6">
-                    <label for="accordion6" class="accordion-item-title"><span class="icon"></span>What is Investing?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Investing involves committing money to financial assets with the expectation of generating returns over time. It is a way to grow wealth by allocating funds to assets such as stocks, bonds, real estate, and mutual funds.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion7">
-                    <label for="accordion7" class="accordion-item-title"><span class="icon"></span>Who Should Take the Investing Courses?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">The Investing Courses are suitable for individuals who want to learn how to make informed investment decisions and build wealth over the long term. Whether you're a beginner or an experienced investor, these courses cover fundamental and advanced concepts to help you achieve your financial goals.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion8">
-                    <label for="accordion8" class="accordion-item-title"><span class="icon"></span>Why Should I Take a Personal Finance Course?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Taking a personal finance course can provide you with the knowledge and skills needed to effectively manage your finances, plan for the future, and achieve your financial goals. Whether you're looking to get out of debt, build wealth, or prepare for retirement, our courses offer valuable insights and practical strategies to help you succeed.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion9">
-                    <label for="accordion9" class="accordion-item-title"><span class="icon"></span>Do I Need Any Prior Knowledge or Experience in Trading & Investing?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">No prior knowledge or experience in trading & Investing is required to enrol in these courses. The course starts with the basics and gradually progresses to more advanced concepts, making it accessible to traders of all levels.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion10">
-                    <label for="accordion10" class="accordion-item-title"><span class="icon"></span>Are These Courses Interactive?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Yes, the Technical Analysis Course includes interactive elements such as quizzes, exercises, and trading simulations to reinforce learning and practical skills. This hands-on approach ensures that you can apply the concepts learned in real-world trading scenarios.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion11">
-                    <label for="accordion11" class="accordion-item-title"><span class="icon"></span>Can I Access the Course Materials After Enrolling?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Yes, once you enrol in the Technical Analysis Course, you will have access to the course materials, including video lectures, reading materials, and supplementary resources, for a specified duration. You can review the materials at your own pace and revisit them as needed during this period.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion12">
-                    <label for="accordion12" class="accordion-item-title"><span class="icon"></span>Is There Any Support Available During the Course?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Yes, our dedicated support team is available to assist you throughout your learning journey. Whether you have questions about course content, technical issues, or general inquiries, our team is here to help via email or discussion forums.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion13">
-                    <label for="accordion13" class="accordion-item-title"><span class="icon"></span>How Do I Enrol in These Courses?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">To enrol in these courses, simply click on the "Enrol Now" button on the course page. You will be guided through the registration process and gain instant access to the course materials once your enrollment is confirmed.</div>
-                </div>
-        
-                <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
-                    <input type="checkbox" id="accordion14">
-                    <label for="accordion14" class="accordion-item-title"><span class="icon"></span>Do I Need Any Special Software or Tools to Participate in the Course?</label>
-                    <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">No, you don't need any special software or tools to participate in the course. However, having access to a computer or mobile device with an internet connection is necessary to access the course materials online.</div>
-                </div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion7">
+                <label for="accordion7" class="accordion-item-title"><span class="icon"></span>Who Should Take the
+                  Investing Courses?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">The Investing Courses
+                  are suitable for individuals who want to learn how to make informed investment decisions and build
+                  wealth over the long term. Whether you're a beginner or an experienced investor, these courses cover
+                  fundamental and advanced concepts to help you achieve your financial goals.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion8">
+                <label for="accordion8" class="accordion-item-title"><span class="icon"></span>Why Should I Take a
+                  Personal Finance Course?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Taking a personal
+                  finance course can provide you with the knowledge and skills needed to effectively manage your
+                  finances, plan for the future, and achieve your financial goals. Whether you're looking to get out of
+                  debt, build wealth, or prepare for retirement, our courses offer valuable insights and practical
+                  strategies to help you succeed.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion9">
+                <label for="accordion9" class="accordion-item-title"><span class="icon"></span>Do I Need Any Prior
+                  Knowledge or Experience in Trading & Investing?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">No prior knowledge or
+                  experience in trading & Investing is required to enrol in these courses. The course starts with the
+                  basics and gradually progresses to more advanced concepts, making it accessible to traders of all
+                  levels.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion10">
+                <label for="accordion10" class="accordion-item-title"><span class="icon"></span>Are These Courses
+                  Interactive?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Yes, the Technical
+                  Analysis Course includes interactive elements such as quizzes, exercises, and trading simulations to
+                  reinforce learning and practical skills. This hands-on approach ensures that you can apply the
+                  concepts learned in real-world trading scenarios.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion11">
+                <label for="accordion11" class="accordion-item-title"><span class="icon"></span>Can I Access the Course
+                  Materials After Enrolling?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Yes, once you enrol in
+                  the Technical Analysis Course, you will have access to the course materials, including video lectures,
+                  reading materials, and supplementary resources, for a specified duration. You can review the materials
+                  at your own pace and revisit them as needed during this period.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion12">
+                <label for="accordion12" class="accordion-item-title"><span class="icon"></span>Is There Any Support
+                  Available During the Course?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">Yes, our dedicated
+                  support team is available to assist you throughout your learning journey. Whether you have questions
+                  about course content, technical issues, or general inquiries, our team is here to help via email or
+                  discussion forums.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion13">
+                <label for="accordion13" class="accordion-item-title"><span class="icon"></span>How Do I Enrol in These
+                  Courses?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">To enrol in these
+                  courses, simply click on the "Enrol Now" button on the course page. You will be guided through the
+                  registration process and gain instant access to the course materials once your enrollment is
+                  confirmed.</div>
+              </div>
+
+              <div class="accordion-item" style="background-color: #dc562e; color: #fff;">
+                <input type="checkbox" id="accordion14">
+                <label for="accordion14" class="accordion-item-title"><span class="icon"></span>Do I Need Any Special
+                  Software or Tools to Participate in the Course?</label>
+                <div class="accordion-item-desc" style="background-color: #dc562e; color: white;">No, you don't need any
+                  special software or tools to participate in the course. However, having access to a computer or mobile
+                  device with an internet connection is necessary to access the course materials online.</div>
+              </div>
             </div>
-        </div>
-        
+          </div>
+
           <!-- faq page -->
 
           <!-- 2 -->
@@ -380,54 +457,55 @@
     </div>
     <br><br><br>
     <!-- /.content-wrapper -->
-    <footer class="bg-light text-center py-5">
+    <footer class="bg-light text-center py-5 shadow-lg">
       <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
-                  <p class="mb-2">contact@throughequity.com</p>
-                  <p class="mb-2">+91 7489352405</p>
-                  <nav class="nav social text-center align-items-center justify-content-center">
-                      <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
-                      <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
-                      <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
-                              class="uil uil-instagram"></i></a>
-                      <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
-                  </nav>
-              </div>
-  
-              <div class="col-md-4">
-                  <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
-                  <p class="mb-0">2nd floor, women's world near bajrang sweets, indrapuri sector-c</p>
-              </div>
-  
-              <div class="col-md-4">
-                  <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
-                  <ul class="list-unstyled text-reset mb-0">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="#">Terms and Conditions</a></li>
-                      <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                      <li><a href="refundPolicy.html">Refund Policy</a></li>
-                  </ul>
-              </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
+            <p class="mb-2">contact@throughequity.com</p>
+            <p class="mb-2">+91 7489352405</p>
+            <nav class="nav social text-center align-items-center justify-content-center">
+              <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
+              <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
+              <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
+                  class="uil uil-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i
+                  class="uil uil-linkedin"></i></a>
+            </nav>
           </div>
-      </div>
-  </footer>
-  <div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-    </svg>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/theme.js"></script>
 
-  <script src="./assets/classroom.js"></script>
+          <div class="col-md-4">
+            <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
+            <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
+            <ul class="list-unstyled text-reset mb-0">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="refundPolicy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/theme.js"></script>
+
+    <script src="./assets/classroom.js"></script>
 
 </body>
 
