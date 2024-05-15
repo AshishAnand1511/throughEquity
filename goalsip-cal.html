@@ -151,8 +151,7 @@
                             </tr>
                             <tr>
                                 <td>Expected Rate of Return (Annual):</td>
-                                <td><input type="number" id="expectedReturn" class="form-control" required step="0.01">
-                                </td>
+                                <td><input type="number" id="expectedReturn" class="form-control" required step="0.01"></td>
                             </tr>
                             <tr>
                                 <td>Number of Years:</td>
@@ -160,10 +159,8 @@
                             </tr>
                             <tr>
                                 <td colspan="2" class="text-center">
-                                    <button type="button" class="btn btn-primary"
-                                        onclick="calculateGoalSIP()">Calculate</button>
-                                    <button type="button" class="btn btn-danger"
-                                        onclick="resetCalculator()">Reset</button>
+                                    <button type="button" class="btn btn-primary" onclick="calculateGoalSIP()">Calculate</button>
+                                    <button type="button" class="btn btn-danger" onclick="resetCalculator()">Reset</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -231,11 +228,18 @@
                 var expectedReturn = parseFloat(document.getElementById("expectedReturn").value);
                 var numberOfYears = parseFloat(document.getElementById("numberOfYears").value);
 
-                var monthlySIP = (currentGoalValue / ((1 + expectedReturn / 100 / 12) ** (numberOfYears * 12) - 1) / 12).toFixed(2);
-                var futureValue = currentGoalValue * Math.pow(1 + expectedReturn / 100 / 12, numberOfYears * 12);
-                var inflationAdjustedValue = futureValue / Math.pow(1 + expectedReturn / 100 / 12, numberOfYears * 12);
+                if (isNaN(currentGoalValue) || isNaN(expectedReturn) || isNaN(numberOfYears) || currentGoalValue <= 0 || expectedReturn <= 0 || numberOfYears <= 0) {
+                    alert("Please enter valid inputs.");
+                    return;
+                }
 
-                document.getElementById("result").innerHTML = "<table class='table table-bordered mt-3'><thead><tr><th colspan='2' class='text-center'>Result</th></tr></thead><tbody><tr><td>Monthly SIP Amount:</td><td>" + monthlySIP + "</td></tr><tr><td>Number of Years Invested:</td><td>" + numberOfYears + "</td></tr><tr><td>Inflation-adjusted Value of Your Goal:</td><td>" + inflationAdjustedValue.toFixed(2) + "</td></tr></tbody></table>";
+                var monthlyRate = expectedReturn / 100 / 12;
+                var numberOfMonths = numberOfYears * 12;
+
+                var futureValueFactor = Math.pow(1 + monthlyRate, numberOfMonths);
+                var monthlySIP = currentGoalValue / ((futureValueFactor - 1) / monthlyRate);
+
+                document.getElementById("result").innerHTML = "<table class='table table-bordered mt-3'><thead><tr><th colspan='2' class='text-center'>Result</th></tr></thead><tbody><tr><td>Monthly SIP Amount:</td><td>" + monthlySIP.toFixed(2) + "</td></tr><tr><td>Number of Years Invested:</td><td>" + numberOfYears + "</td></tr></tbody></table>";
             }
 
             function resetCalculator() {
