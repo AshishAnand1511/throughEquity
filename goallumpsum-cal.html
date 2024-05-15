@@ -141,7 +141,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th colspan="2" class="text-center">Target SIP Planner</th>
+                                <th colspan="2" class="text-center">Future Fund Calculator</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -241,15 +241,20 @@
                 var currentGoalValue = parseFloat(document.getElementById("currentGoalValue").value);
                 var expectedReturn = parseFloat(document.getElementById("expectedReturn").value);
                 var numberOfYears = parseFloat(document.getElementById("numberOfYears").value);
-
-                var inflationRate = 5; // Assume a 5% inflation rate
+        
+                if (isNaN(currentGoalValue) || isNaN(expectedReturn) || isNaN(numberOfYears) || currentGoalValue <= 0 || expectedReturn <= 0 || numberOfYears <= 0) {
+                    alert("Please enter valid inputs.");
+                    return;
+                }
+        
+                var inflationRate = 6;
                 var inflationAdjustedValue = currentGoalValue * Math.pow(1 + (inflationRate / 100), numberOfYears);
-
+        
                 var investmentAmount = inflationAdjustedValue / Math.pow(1 + (expectedReturn / 100), numberOfYears);
-
+        
                 document.getElementById("result").innerHTML = "<tr><td>Investment Amount Required:</td><td>" + investmentAmount.toFixed(2) + "</td></tr><tr><td>Number of Years Invested:</td><td>" + numberOfYears + "</td></tr><tr><td>Inflation-adjusted Value of Your Goal:</td><td>" + inflationAdjustedValue.toFixed(2) + "</td></tr>";
             }
-
+        
             function resetCalculator() {
                 document.getElementById("currentGoalValue").value = "";
                 document.getElementById("expectedReturn").value = "";
