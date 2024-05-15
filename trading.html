@@ -21,10 +21,6 @@
   <!-- ............. -->
 </head>
 <style>
-  .buttonn:hover {
-    background-color: #6ccff6 !important;
-  }
-
   .btnn {
     flex-wrap: nowrap;
   }
@@ -149,187 +145,195 @@
     </header>
     <!-- /header -->
 
-    <section class="wrapper bg-light pb-10">
-      <div class="container pt-10 pt-md-14">
-        <div class="row">
-          <div class="">
-            <div style="width: 100% !important; left: 50%;"
-              class="mx-auto d-flex justify-content-center align-items-center">
-              <h1
-                style="font-size: 30px; border: 1px solid black; width: fit-content; background-color: #dc562e ; color: white;"
-                class="display-1 mb-0 px-5 py-1 rounded mb-10">
-                Trading
-              </h1>
-            </div>
+    <section class="wrapper bg-light pb-10 p-5">
+      <section class="wrapper bg-gray">
 
-            <div id="trading" style="display:block;">
-              <p>Dive into the dynamic world of trading with our comprehensive courses designed to equip you with
-                essential skills and knowledge. From technical analysis to option trading, our courses empower you
-                to make informed decisions and thrive in the financial markets.</p>
-              <div style="width: 100%;" class="gap-5 justify-content-center align-items-center d-flex btnn">
-                <button class="btn btn-outline-secondary" id="technical-btn"
-                  style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d; background-color: #dc562e; color: #fff;"
-                  onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';"
-                  onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
-                  Technical Analysis
-                </button>
-                <button class="btn btn-outline-secondary" id="option-btn"
-                  style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid gray;background-color: #dc562e; color: #fff;"
-                  onmouseover="this.style.backgroundColor='#6ccff6'; this.style.color='#ffffff';"
-                  onmouseout="this.style.backgroundColor='#dc562e'; this.style.color='#fff';">
-                  Option Trading
-                </button>
-              </div>
-              <div id="technical" style="display: block;">
-                <h5 class="fs-25"><b>Description: </b></h5>
-                <p>Dive into the world of technical analysis and learn how to analyse price
-                  charts and indicators to make informed trading decisions. This course is designed for beginners
-                  and intermediate traders looking to enhance their technical analysis skills.</p>
-                <h5 class="fs-25"><b>Key Topics:</b></h5>
-                <li><b>Reading Charts</b> e.g., support and resistance, trendlines</li>
-                <li>
-                  Understanding chart patterns (e.g., Head & shoulder, wedges, Rounding bottom etc)
-                </li>
-                <li>Utilising technical indicators (e.g., moving averages, RSI etc)</li>
-                <li>Recognizing market trends and patterns for entry and exit points</li>
-                <li>Developing trading strategies based on technical analysis</li>
+        <!-- /.container -->
+        <figure class="position-absoute" style="bottom: 0; left: 0; z-index: 2;"><img
+            src="./assets/img/photos/trading.png" alt="" /></figure>
+      </section>
 
-                <h5 class="fs-25"><b>Skills & Outcomes:</b></h5>
-
-                <li>Ability to analyse price charts effectively</li>
-                <li>Proficiency in using technical indicators to identify trading opportunities</li>
-                <li>Improved decision-making skills in timing trades</li>
-                <li>Development of personalised trading strategies based on technical analysis principles</li>
-
-                <div class="w-100 d-flex align-items-center justify-content-center">
-                  <button type="button" class="btn btn-sm buttonn mt-5" style="background-color: #dc562e; color: #fff;">
-                    Enroll Technical Analysis Course</button>
-                </div>
-              </div>
-              <div id="option" style="display: none;">
-                <h5 class="fs-25"><b>Description: </b></h5>
-                <p>Explore the world of options analysis and trading and discover advanced
-                  strategies to leverage market movements. Whether you're new to options or looking to enhance your
-                  trading skills, this course covers essential concepts and practical techniques to succeed in the
-                  options market.</p>
-                <h5 class="fs-25"><b>Key Topics: </b></h5>
-                <li>Introduction to Derivatives (Futures & options) terminology</li>
-                <li>Option Chain Analysis</li>
-                <li>Option Trading Using Technical Analysis</li>
-                <li>Understanding option pricing and Greeks (delta, gamma, theta, vega)</li>
-                <li>Basic and advanced option strategies (e.g., covered calls, spreads, straddles)</li>
-                <li>Risk management techniques in options trading</li>
-
-                <h5 class="mt-3 fs-25"><b>Skills & Outcomes: </b></h5>
-                <li>Ability to confidently trade options contracts</li>
-                <li>Understanding of various option strategies and when to apply them</li>
-                <li>Proficiency in managing risk and maximising returns in options trading</li>
-                <li>Practical application of options trading strategies in real-world scenarios</li>
-                <div class="w-100 d-flex align-items-center justify-content-center">
-                  <button type="button" class="mt-5 btn btn-sm buttonn"
-                    style="background-color: #dc562e; color: #fff;">Enroll Option Trading Course</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /column -->
+      <div id="trading" style="display:block; margin-top: 1rem;">
+        <p>Dive into the dynamic world of trading with our comprehensive courses designed to equip you with
+          essential skills and knowledge. From technical analysis to option trading, our courses empower you
+          to make informed decisions and thrive in the financial markets.</p>
+        <div style="width: 100%;" class="gap-5 justify-content-center align-items-center d-flex btnn">
+          <button class="btn btn-outline-secondary" id="technical-btn"
+            style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d; background-color: #001d3d; color: #fff;">
+            Technical Analysis
+          </button>
+          <button class="btn btn-outline-secondary" id="option-btn"
+            style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid gray;background-color: #E6E8EC; color: #000;">
+            Option Trading
+          </button>
         </div>
-        <!-- /.row -->
-      </div>
+        <div id="technical" style="display: block;">
+          <h5 class="fs-25 mt-5"><b>Description: </b></h5>
+          <p>Dive into the world of technical analysis and learn how to analyse price
+            charts and indicators to make informed trading decisions. This course is designed for beginners
+            and intermediate traders looking to enhance their technical analysis skills.</p>
+          <h5 class="fs-25"><b>Key Topics:</b></h5>
+          <li><b>Reading Charts</b> e.g., support and resistance, trendlines</li>
+          <li>
+            Understanding chart patterns (e.g., Head & shoulder, wedges, Rounding bottom etc)
+          </li>
+          <li>Utilising technical indicators (e.g., moving averages, RSI etc)</li>
+          <li>Recognizing market trends and patterns for entry and exit points</li>
+          <li>Developing trading strategies based on technical analysis</li>
 
+          <h5 class="fs-25 mt-5"><b>Skills & Outcomes:</b></h5>
 
+          <li>Ability to analyse price charts effectively</li>
+          <li>Proficiency in using technical indicators to identify trading opportunities</li>
+          <li>Improved decision-making skills in timing trades</li>
+          <li>Development of personalised trading strategies based on technical analysis principles</li>
 
-      <!-- /.container -->
-
-
-
-    </section>
-    <br>
-    <br>
-    <br>
-
-    <footer class="bg-light text-center py-5 shadow-lg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
-            <p class="mb-2">contact@throughequity.com</p>
-            <p class="mb-2">+91 7489352405</p>
-            <nav class="nav social text-center align-items-center justify-content-center">
-              <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
-              <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
-              <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
-                  class="uil uil-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i
-                  class="uil uil-linkedin"></i></a>
-            </nav>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-outline-secondary mt-5"
+              style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d; background-color: #001d3d; color: #fff;"
+              onmouseover="this.style.backgroundColor='#E6E8EC'; this.style.color='#000';"
+              onmouseout="this.style.backgroundColor='#001d3d'; this.style.color='#fff';">
+              Enroll Technical Analysis Course
+            </button>
           </div>
+        </div>
+        <div id="option" style="display: none;">
+          <h5 class="fs-25 mt-5"><b>Description: </b></h5>
+          <p>Explore the world of options analysis and trading and discover advanced
+            strategies to leverage market movements. Whether you're new to options or looking to enhance your
+            trading skills, this course covers essential concepts and practical techniques to succeed in the
+            options market.</p>
+          <h5 class="fs-25"><b>Key Topics: </b></h5>
+          <li>Introduction to Derivatives (Futures & options) terminology</li>
+          <li>Option Chain Analysis</li>
+          <li>Option Trading Using Technical Analysis</li>
+          <li>Understanding option pricing and Greeks (delta, gamma, theta, vega)</li>
+          <li>Basic and advanced option strategies (e.g., covered calls, spreads, straddles)</li>
+          <li>Risk management techniques in options trading</li>
 
-          <div class="col-md-4">
-            <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
-            <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
-          </div>
-
-          <div class="col-md-4">
-            <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
-            <ul class="list-unstyled text-reset mb-0">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-              <li><a href="refundPolicy.html">Refund Policy</a></li>
-            </ul>
+          <h5 class="mt-5 fs-25"><b>Skills & Outcomes: </b></h5>
+          <li>Ability to confidently trade options contracts</li>
+          <li>Understanding of various option strategies and when to apply them</li>
+          <li>Proficiency in managing risk and maximising returns in options trading</li>
+          <li>Practical application of options trading strategies in real-world scenarios</li>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-outline-secondary mt-5"
+              style="font-weight: 700; padding: 0.5rem 2rem; border: none; border-bottom: 1px solid #001d3d; background-color: #001d3d; color: #fff;"
+              onmouseover="this.style.backgroundColor='#E6E8EC'; this.style.color='#000';"
+              onmouseout="this.style.backgroundColor='#001d3d'; this.style.color='#fff';">
+              Enroll Option Trading Course
+            </button>
           </div>
         </div>
       </div>
-    </footer>
-    <div class="progress-wrap">
-      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-      </svg>
+  </div>
+  <!-- /column -->
+  </div>
+  <!-- /.row -->
+  </div>
+
+
+
+  <!-- /.container -->
+
+
+
+  </section>
+  <br>
+  <br>
+  <br>
+
+  <footer class="bg-light text-center py-5 shadow-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Connect With Us</h4>
+          <p class="mb-2">contact@throughequity.com</p>
+          <p class="mb-2">+91 7489352405</p>
+          <nav class="nav social text-center align-items-center justify-content-center">
+            <a href="https://wa.me/message/LS2SKH4GRL4HG1" class="mx-2"><i class="uil uil-whatsapp"></i></a>
+            <a href="#" class="mx-2"><i class="uil uil-facebook-f"></i></a>
+            <a href="https://www.instagram.com/through_equity?igsh=YTVocHV2dm5wbjlq" class="mx-2"><i
+                class="uil uil-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/through-equity/" class="mx-2"><i class="uil uil-linkedin"></i></a>
+          </nav>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
+          <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="text-black mb-3" style="font-weight: 900;">Learn More</h4>
+          <ul class="list-unstyled text-reset mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="refundPolicy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"></script>
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/theme.js"></script>
+  </footer>
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
 
-    <script src="./assets/classroom.js"></script>
+  <script src="./assets/classroom.js"></script>
 
-    <script>
-      var a = 2;
-      document.querySelector("#technical-btn").addEventListener("click", () => {
-        a = 0;
-        updateDisplay();
-      });
-      document.querySelector("#option-btn").addEventListener("click", () => {
-        a = 1;
-        updateDisplay();
-      });
+  <script>
+    var a = 2;
+    document.querySelector("#technical-btn").addEventListener("click", () => {
+      a = 0;
+      updateDisplay();
+    });
+    document.querySelector("#option-btn").addEventListener("click", () => {
+      a = 1;
+      updateDisplay();
+    });
 
-      function updateDisplay() {
-        if (a == 0) {
-          document.querySelector("#technical").style.display = "block";
-          document.querySelector("#option").style.display = "none";
-          document.querySelector("#technical-btn").style.borderBottom = "1px solid #001d3d";
-          document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
-        }
-        else if (a == 1) {
-          document.querySelector("#technical").style.display = "none";
-          document.querySelector("#option").style.display = "block";
-          document.querySelector("#option-btn").style.borderBottom = "1px solid #001d3d";
-          document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
-        }
-        else {
-          document.querySelector("#technical").style.display = "none";
-          document.querySelector("#option").style.display = "none";
-          document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
-          document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
-        }
+    function updateDisplay() {
+      if (a == 0) {
+        document.querySelector("#technical").style.display = "block";
+        document.querySelector("#option").style.display = "none";
+        document.querySelector("#technical-btn").style.borderBottom = "1px solid #001d3d";
+        document.querySelector("#technical-btn").style.backgroundColor = "#001d3d";
+        document.querySelector("#technical-btn").style.color = "#fff";
+        document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
+        document.querySelector("#option-btn").style.backgroundColor = "#E6E8EC";
+        document.querySelector("#option-btn").style.color = "#000";
       }
-    </script>
+      else if (a == 1) {
+        document.querySelector("#technical").style.display = "none";
+        document.querySelector("#option").style.display = "block";
+        document.querySelector("#option-btn").style.borderBottom = "1px solid #001d3d";
+        document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
+        document.querySelector("#technical-btn").style.backgroundColor = "#E6E8EC";
+        document.querySelector("#technical-btn").style.color = "#000";
+        document.querySelector("#option-btn").style.backgroundColor = "#001d3d";
+        document.querySelector("#option-btn").style.color = "#fff";
+      }
+      else {
+        document.querySelector("#technical").style.display = "none";
+        document.querySelector("#option").style.display = "none";
+        document.querySelector("#option-btn").style.borderBottom = "1px solid gray";
+        document.querySelector("#option-btn").style.backgroundColor = "#E6E8EC";
+        document.querySelector("#technical-btn").style.borderBottom = "1px solid gray";
+        document.querySelector("#technical-btn").style.backgroundColor = "#E6E8EC";
+      }
+    }
+  </script>
 </body>
 
 </html>
