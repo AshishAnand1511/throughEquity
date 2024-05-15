@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./faq.css">
     <!-- ............. -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-
     <!-- ............. -->
 </head>
 <style>
@@ -46,36 +45,21 @@
                         </div>
                         <ul class="navbar-nav">
                             <li class="nav-item"><a style="font-weight: 700; color: #fff;" class="nav-link"
-                                    href="index.html">Home</a>
-
-                            </li>
+                                    href="index.html">Home</a></li>
                             <li class="nav-item dropdown"><a style="font-weight: 700; color: #fff;" class="nav-link"
-                                    href="./about.html">About</a>
-
-                            </li>
+                                    href="./about.html">About</a></li>
                             <li class="nav-item dropdown"><a style="font-weight: 700; color: #fff;" class="nav-link"
-                                    href="./classroom.html">Class Room</a>
-
-                            </li>
+                                    href="./classroom.html">Class Room</a></li>
                             <li class="nav-item dropdown"><a style="font-weight: 700; color: #fff;" class="nav-link "
-                                    href="./corporatetraining.html">Corporate Training</a>
-
-                            </li>
+                                    href="./corporatetraining.html">Corporate Training</a></li>
                             <li class="nav-item dropdown block d-lg-none"><a style="font-weight: 700; color: #fff;"
-                                    class="nav-link " href="./financial-calculator.html">financial calculator</a>
-
-                            </li>
+                                    class="nav-link " href="./financial-calculator.html">Financial Calculator</a></li>
                             <li class="nav-item dropdown block d-lg-none"><a style="font-weight: 700; color: #fff;"
-                                    class="nav-link " href="./blog.html">Blog</a>
-
-                            </li>
+                                    class="nav-link " href="./blog.html">Blog</a></li>
                             <li class="nav-item dropdown block d-lg-none"><a style="font-weight: 700; color: #fff;"
-                                    class="nav-link " href="./for-you.html">For you</a>
-
-                            </li>
+                                    class="nav-link " href="./for-you.html">For you</a></li>
                             <li class="nav-item dropdown"><a style="font-weight: 700; color: #fff;" class="nav-link "
-                                    href="./contact.html">Contact Us</a>
-                            </li>
+                                    href="./contact.html">Contact Us</a></li>
                             <div class="container my-auto mb-5">
                                 <div class="row justify-content-center">
                                     <div class="col-auto">
@@ -99,14 +83,8 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-                            <!-- /.navbar-nav -->
+                        </ul>
                     </div>
-                    <!-- /.navbar-collapse -->
-
                     <div class="navbar-other w-100 d-flex ms-auto">
                         <ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
                             <li class="nav-item">
@@ -116,25 +94,17 @@
                                     <a href="#"><i class="uil uil-dribbble"></i></a>
                                     <a href="#"><i class="uil uil-instagram"></i></a>
                                 </nav>
-                                <!-- /.social -->
                             </li>
                             <li class="nav-item d-lg-none">
                                 <div class="navbar-hamburger"><button class="hamburger animate plain"
                                         data-toggle="offcanvas-nav"><span></span></button></div>
                             </li>
                         </ul>
-                        <!-- /.navbar-nav -->
                     </div>
-                    <!-- /.navbar-other -->
                 </div>
-                <!-- /.container -->
             </nav>
-            <!-- /.navbar -->
         </header>
-        <!-- /header -->
-        <!-- /section -->
-        <br>
-        <!-- ///////////////// -->
+
         <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-sm-6 offset-sm-3">
@@ -151,16 +121,26 @@
                             </tr>
                             <tr>
                                 <td>Expected Rate of Return (Annual):</td>
-                                <td><input type="number" id="expectedReturn" class="form-control" required step="0.01"></td>
+                                <td><input type="number" id="expectedReturn" class="form-control" required step="0.01">
+                                </td>
                             </tr>
                             <tr>
                                 <td>Number of Years:</td>
                                 <td><input type="number" id="numberOfYears" class="form-control" required></td>
                             </tr>
                             <tr>
+                                <td>
+                                    <p class="text-danger">
+                                        (NOTE - Average inflation rate of 6% is assumed)
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td colspan="2" class="text-center">
-                                    <button type="button" class="btn btn-primary" onclick="calculateGoalSIP()">Calculate</button>
-                                    <button type="button" class="btn btn-danger" onclick="resetCalculator()">Reset</button>
+                                    <button type="button" class="btn btn-primary"
+                                        onclick="calculateGoalSIP()">Calculate</button>
+                                    <button type="button" class="btn btn-danger"
+                                        onclick="resetCalculator()">Reset</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -169,8 +149,7 @@
                 </div>
             </div>
         </div>
-        <!-- ........1 -->
-        <!-- /.content-wrapper -->
+
         <footer class="bg-light text-center py-5 shadow-lg">
             <div class="container">
                 <div class="row">
@@ -191,7 +170,8 @@
 
                     <div class="col-md-4">
                         <h4 class="text-black mb-3" style="font-weight: 900;">Come See Us</h4>
-                        <p class="mb-0">2nd floor, women's world near bajrang sweets, <br> indrapuri sector-c</p>
+                        <p class="mb-0">2nd floor,
+                            women's world near bajrang sweets, <br> indrapuri sector-c</p>
                     </div>
 
                     <div class="col-md-4">
@@ -219,7 +199,6 @@
             crossorigin="anonymous"></script>
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/theme.js"></script>
-
         <script src="./assets/classroom.js"></script>
 
         <script>
@@ -227,6 +206,7 @@
                 var currentGoalValue = parseFloat(document.getElementById("currentGoalValue").value);
                 var expectedReturn = parseFloat(document.getElementById("expectedReturn").value);
                 var numberOfYears = parseFloat(document.getElementById("numberOfYears").value);
+                var inflationRate = 6 / 100; // 6% inflation rate
 
                 if (isNaN(currentGoalValue) || isNaN(expectedReturn) || isNaN(numberOfYears) || currentGoalValue <= 0 || expectedReturn <= 0 || numberOfYears <= 0) {
                     alert("Please enter valid inputs.");
@@ -236,21 +216,27 @@
                 var monthlyRate = expectedReturn / 100 / 12;
                 var numberOfMonths = numberOfYears * 12;
 
-                var futureValueFactor = Math.pow(1 + monthlyRate, numberOfMonths);
-                var monthlySIP = currentGoalValue / ((futureValueFactor - 1) / monthlyRate);
+                // Adjust goal value for inflation
+                var inflationAdjustedGoalValue = currentGoalValue * Math.pow(1 + inflationRate, numberOfYears);
 
-                document.getElementById("result").innerHTML = "<table class='table table-bordered mt-3'><thead><tr><th colspan='2' class='text-center'>Result</th></tr></thead><tbody><tr><td>Monthly SIP Amount:</td><td>" + monthlySIP.toFixed(2) + "</td></tr><tr><td>Number of Years Invested:</td><td>" + numberOfYears + "</td></tr></tbody></table>";
+                // Calculate future value
+                var futureValueFactor = Math.pow(1 + monthlyRate, numberOfMonths);
+                var futureValue = inflationAdjustedGoalValue * futureValueFactor;
+
+                // Calculate monthly SIP amount
+                var monthlySIP = inflationAdjustedGoalValue / ((futureValueFactor - 1) / monthlyRate);
+
+                document.getElementById("result").innerHTML = "<table class='table table-bordered mt-3'><thead><tr><th colspan='2' class='text-center'>Result</th></tr></thead><tbody><tr><td>Monthly SIP Amount:</td><td>" + monthlySIP.toFixed(2) + "</td></tr><tr><td>Number of Years Invested:</td><td>" + numberOfYears + "</td></tr><tr><td>Inflation-adjusted Value of Your Goal:</td><td>" + inflationAdjustedGoalValue.toFixed(2) + "</td></tr></tbody></table>";
             }
 
             function resetCalculator() {
-                
                 document.getElementById("currentGoalValue").value = "";
                 document.getElementById("expectedReturn").value = "";
                 document.getElementById("numberOfYears").value = "";
                 document.getElementById("result").innerHTML = "";
             }
         </script>
-
+    </div>
 </body>
 
 </html>
