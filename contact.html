@@ -162,72 +162,57 @@
                 <div class="col-xl-10 mx-auto">
                   <div class="row gy-10 gx-lg-8 gx-xl-12">
                     <div class="col-lg-12">
-                      <form class="contact-form needs-validation p-10" method="post" action="./assets/php/contact.php"
-                        novalidate>
+                      <form id="contact-form" action="./assets/php/contact.php" method="post">
                         <div class="messages"></div>
                         <div class="row gx-4">
-                          <div class="col-md-12">
-                            <div class="form-floating mb-4">
-                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane"
-                                required>
-                              <label for="form_name">Your Full Name *</label>
-                              <div class="valid-feedback"> Looks good! </div>
-                              <div class="invalid-feedback"> Please enter your full name. </div>
+                            <div class="col-md-12">
+                                <div class="form-floating mb-4">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required>
+                                    <label for="form_name">Your Full Name *</label>
+                                    <div class="valid-feedback"> Looks good! </div>
+                                    <div class="invalid-feedback"> Please enter your full name. </div>
+                                </div>
                             </div>
-                          </div>
-                          <!-- /column -->
-                          <!-- /column -->
-
-                          <div class="col-md-6">
-                            <div class="form-floating mb-4">
-                              <input id="form_name" type="number" name="phoneNo" class="form-control"
-                                placeholder="Phone Number" required>
-                              <label for="form_name">Phone Number *</label>
-                              <div class="valid-feedback"> Looks good! </div>
-                              <div class="invalid-feedback"> Please enter your Phone Number </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-4">
+                                    <input id="form_phone" type="number" name="phone" class="form-control" placeholder="Phone Number" required>
+                                    <label for="form_phone">Phone Number *</label>
+                                    <div class="valid-feedback"> Looks good! </div>
+                                    <div class="invalid-feedback"> Please enter your Phone Number </div>
+                                </div>
                             </div>
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="form-floating mb-4">
-                              <input id="form_email" type="email" name="email" class="form-control"
-                                placeholder="jane.doe@example.com">
-                              <label for="form_email">Email</label>
-                              <div class="valid-feedback"> Looks good! </div>
-                              <div class="invalid-feedback"> Please provide a valid email address. </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-4">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="jane.doe@example.com" required>
+                                    <label for="form_email">Email *</label>
+                                    <div class="valid-feedback"> Looks good! </div>
+                                    <div class="invalid-feedback"> Please provide a valid email address. </div>
+                                </div>
                             </div>
-                          </div>
-                          <!-- /column -->
-                          <!-- /column -->
-                          <div class="col-12">
-                            <div class="form-floating mb-4">
-                              <textarea id="form_message" name="message" class="form-control" placeholder="Your message"
-                                style="height: 150px" required></textarea>
-                              <label for="form_message">Message *</label>
-                              <div class="valid-feedback"> Looks good! </div>
-                              <div class="invalid-feedback"> Please enter your messsage. </div>
+                            <div class="col-12">
+                                <div class="form-floating mb-4">
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px" required></textarea>
+                                    <label for="form_message">Message *</label>
+                                    <div class="valid-feedback"> Looks good! </div>
+                                    <div class="invalid-feedback"> Please enter your message. </div>
+                                </div>
                             </div>
-                          </div>
-                          <!-- /column -->
-                          <div class="col-12">
-                            <div class="form-check mb-4">
-                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                              <label class="form-check-label" for="invalidCheck"> I agree to <a href="#"
-                                  class="hover">terms
-                                  and policy</a>. </label>
-                              <div class="invalid-feedback"> You must agree before submitting. </div>
+                            <div class="col-12">
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck"> I agree to <a href="#" class="hover">terms and policy</a>. </label>
+                                    <div class="invalid-feedback"> You must agree before submitting. </div>
+                                </div>
                             </div>
-                          </div>
-                          <!-- /column -->
-                          <div class="col-12">
-                            <input type="submit" class="btn btn-primary rounded-pill btn-send mb-3"
-                              value="Send message">
-                            <p class="text-muted"><strong>*</strong> These fields are required.</p>
-                          </div>
-                          <!-- /column -->
+                            <div class="col-12">
+                                <input type="submit" class="btn btn-primary rounded-pill btn-send mb-3" value="Send message">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
                         </div>
-                        <!-- /.row -->
-                      </form>
+                    </form>
+                    
+                    
+                    
                       <!-- /form -->
                     </div>
                     <!--/column -->
